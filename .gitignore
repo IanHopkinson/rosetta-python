@@ -1,0 +1,6 @@
+
+*.pyc
+
+src/rosetta_python.egg-info/
+venv/
+*/__pycache__
