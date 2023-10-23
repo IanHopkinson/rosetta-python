@@ -147,12 +147,30 @@ Typically I use `black` integrated into Visual Studio Code and format on save. `
 
 ## Documentation Generation
 
-Documentation for this project is by [sphinx](https://www.sphinx-doc.org/en/master/) which is installed with:
+Documentation for this project is by [sphinx](https://www.sphinx-doc.org/en/master/), the required libraries are installed with:
+
+A `docs` directory is created in the top-level of the project and the following command is run in it to setup sphinx:
+
+```shell
+sphinx-quickstart
+```
+
+This asks a bunch of questions about the project, the only one where the default response is not good is "Separate source and build directories", it is best to answer "yes" to this.
+
+The configuration for sphinx goes in a Python file `docs/source/conf.py` which is more concise than it used to be. For this project it is modified:
+
+```python
+extensions = [
+'sphinx.ext.autodoc',
+'sphinx_autodoc_typehints',
+]
+html_theme = "sphinx_rtd_theme"
+```
 
 
 
 ## Visual Studio Code
 
-As a personal choice, I use Visual Studio Code. 
+As a personal choice, I use Visual Studio Code for software development. 
 
-The configuration for Code is found in the `.vscode` directory of this repo.
+The configuration used for this project for Code is found in the `.vscode` directory of this repo.

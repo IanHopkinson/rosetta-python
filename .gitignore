@@ -4,3 +4,4 @@
 src/rosetta_python.egg-info/
 venv/
 */__pycache__
+docs/build/
