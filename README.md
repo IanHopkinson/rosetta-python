@@ -167,10 +167,25 @@ extensions = [
 html_theme = "sphinx_rtd_theme"
 ```
 
+The sphinx documentation is initialised by running the following in the project root:
+
+```shell
+sphinx-apidoc -o docs/source/ src
+```
+
+And then HTML files are generated with the following, run in the `docs` directory
+
+```shell
+make html
+```
+
+## Git Bash
+
+A `Makefile` is included in this repository which has targets for installing the package, running tests, running the linters and 
+building the documentation. For Git Bash I needed to install `make` using the chocolatey package manager (`choco install make`).
 
 
 ## Visual Studio Code
-
 As a personal choice, I use Visual Studio Code for software development. 
 
 The configuration used for this project for Code is found in the `.vscode` directory of this repo.
