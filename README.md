@@ -35,7 +35,7 @@ Typically Python is run in a virtual environment which can be created, as descri
 New packages are installed with:
 
 ```shell
-pip install pytest
+pip install black
 ```
 
 And a so-called `editable` package can be installed in the local project using:
@@ -61,7 +61,7 @@ It is then activated (on my Windows machine in Git Bash) with:
 source {environment_name}/Scripts/activate
 ```
 
-I suspect this is a slightly unusual way of invoking since Linux machines will put the activate command in the `bin` subdirectory of the environment. Interestingly the shell script `deactivate` command is not available on a Windows installation.
+I suspect this is a slightly unusual way of invoking since Linux machines will put the `activate` command in the `bin` subdirectory of the environment. Interestingly the shell script `deactivate` command is not available on a Windows installation.
 
 The built-in `venv` will use the global Python version, (3.11.3 in this case) whilst other virtual environment managers allow per environment Python versions.
 
