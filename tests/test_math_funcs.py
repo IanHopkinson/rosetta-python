@@ -6,7 +6,7 @@ import unittest
 from rosetta_python.math_funcs import add
 
 
-class TestModuleDemo(unittest.TestCase):
+class TestMathFuncs(unittest.TestCase):
     def test_add(self):
         status = add(1, 1)
         self.assertEqual(status, 2)
